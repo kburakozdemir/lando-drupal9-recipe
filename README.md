@@ -42,3 +42,23 @@ lando drush site-install \
   --account-pass=admin \
   --yes
 ```
+
+## Environment Information
+
+```txt
+lsb_release -a
+No LSB modules are available.
+Distributor ID: Ubuntu
+Description:    Ubuntu 18.04.5 LTS
+Release:        18.04
+Codename:       bionic
+
+lando version
+v3.1.4
+
+docker --version
+Docker version 20.10.7, build f0df350
+
+docker-compose --version
+docker-compose version 1.29.1, build c34c88b2
+ ```
