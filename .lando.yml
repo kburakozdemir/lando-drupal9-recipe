@@ -31,7 +31,7 @@ tooling:
   drush:
     service: appserver
     cmd:
-      - "drush --root=/app/drupal"
+      - "/app/drupal/vendor/drush/drush/drush --root=/app/drupal"
   composer:
     service: appserver
     cmd:

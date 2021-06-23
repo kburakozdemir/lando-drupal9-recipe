@@ -11,6 +11,8 @@ rm -rf ./temp/
 
 rm ./drupal/web/.gitkeep
 
+lando composer require "drush/drush" --no-update
+
 lando composer install
 ```
 
