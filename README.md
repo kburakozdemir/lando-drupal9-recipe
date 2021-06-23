@@ -1,5 +1,7 @@
 # Quick Start
 
+After cloning the repo you're free to delete the `.git` directory.
+
 ```bash
 lando start
 
