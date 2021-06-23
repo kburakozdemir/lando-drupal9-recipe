@@ -1,8 +1,13 @@
-# Quick Start
+# Quick Start for Drupal 9 and Lando
 
-After cloning the repo you're free to delete the `.git` directory.
+All of the bash commands in this document must be run in repo root.
 
-All of the following commands will be run in repo root.
+After cloning the repo, you're free to delete the `.git` directory.
+
+```bash
+rm -rf ./.git/
+```
+
 ## Prepare Code base
 
 ```bash
