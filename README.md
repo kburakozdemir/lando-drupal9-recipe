@@ -45,6 +45,8 @@ lando drush site-install \
 
 ## Environment Information
 
+The operating system and other software used are as follows:
+
 ```txt
 lsb_release -a
 No LSB modules are available.
