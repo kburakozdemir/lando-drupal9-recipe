@@ -1,0 +1,38 @@
+name: dev-drupal9
+recipe: drupal9
+config:
+  database: mysql:5.7.34
+services:
+  appserver:
+    webroot: drupal/web
+    type: php:7.4
+    # xdebug: debug
+    # config:
+    #   php: scripts/lando-customizations/php.ini
+    run_as_root:
+      - ln -snf /usr/share/zoneinfo/Europe/Istanbul /etc/localtime
+      - echo "Europe/Istanbul" > /etc/timezone
+    build_as_root:
+      - echo "updating apt" && apt update -y
+      - echo "installing upload progress" && pecl install uploadprogress 2>&1 >/dev/null
+      - docker-php-ext-enable uploadprogress 2>&1 >/dev/null
+      - echo "enabling apache modules" && a2enmod expires headers deflate rewrite 2>&1 >/dev/null
+      - echo "restarting apache" && service apache2 reload 2>&1 >/dev/null
+    # build:
+    #   - composer self-update --1
+    #   - composer global require hirak/prestissimo
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver
+  pma:
+    type: phpmyadmin
+tooling:
+  drush:
+    service: appserver
+    cmd:
+      - "drush --root=/app/drupal"
+  composer:
+    service: appserver
+    cmd:
+      - "php -d memory_limit=-1 /usr/local/bin/composer --working-dir=/app/drupal"
