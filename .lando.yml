@@ -1,7 +1,7 @@
 name: dev-drupal9
 recipe: drupal9
 config:
-  database: mysql:5.7.34
+  database: mysql:5.7.35
 services:
   appserver:
     webroot: drupal/web
