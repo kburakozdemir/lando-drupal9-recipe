@@ -15,9 +15,9 @@ lando start
 
 lando composer create-project drupal/recommended-project /app/temp --no-install
 
-cp ./temp/* ./drupal/
+rsync -rtv --remove-source-files ./temp/ ./drupal/
 
-rm -rf ./temp/
+find ./temp -type d -empty -delete # or run `rm -rf ./temp/`
 
 rm ./drupal/web/.gitkeep
 
@@ -51,16 +51,16 @@ The operating system and other software used are as follows:
 lsb_release -a
 No LSB modules are available.
 Distributor ID: Ubuntu
-Description:    Ubuntu 18.04.5 LTS
+Description:    Ubuntu 18.04.6 LTS
 Release:        18.04
 Codename:       bionic
 
 lando version
-v3.1.4
+v3.4.2
 
 docker --version
-Docker version 20.10.7, build f0df350
+Docker version 20.10.11, build dea9396
 
 docker-compose --version
 docker-compose version 1.29.1, build c34c88b2
- ```
+```
