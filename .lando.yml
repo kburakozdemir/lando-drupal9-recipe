@@ -1,11 +1,11 @@
 name: dev-drupal9
 recipe: drupal9
 config:
-  database: mysql:5.7.36
+  database: mysql:5.7.38
 services:
   appserver:
     webroot: drupal/web
-    type: php:7.4
+    type: php:8.0
     # xdebug: debug
     # config:
     #   php: scripts/lando-customizations/php.ini
