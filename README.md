@@ -38,7 +38,7 @@ This will perform a standard Drupal installation:
 # drush si --db-url=mysql://root:pass@localhost:port/dbname
 lando drush site-install \
   standard \
-  --locale=tr \
+  --locale=en \
   --db-url=mysql://drupal9:drupal9@database:3306/drupal9 \
   --account-name=admin \
   --account-pass=admin \
