@@ -57,18 +57,6 @@ lando drush site-install \
   --account-name=admin \
   --account-pass=admin \
   --yes
-```This will perform a standard Drupal installation:
-
-```bash
-# Ref: https://drushcommands.com/drush-9x/site/site:install/
-# drush si --db-url=mysql://root:pass@localhost:port/dbname
-lando drush site-install \
-  standard \
-  --locale=en \
-  --db-url=mysql://drupal9:drupal9@database:3306/drupal9 \
-  --account-name=admin \
-  --account-pass=admin \
-  --yes
 ```
 
 ## Environment Information
