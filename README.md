@@ -21,7 +21,7 @@ find ./temp -type d -empty -delete # or run `rm -rf ./temp/`
 
 rm ./drupal/web/.gitkeep
 
-lando composer install
+lando composer install # do not forget to confirm plugins when prompted
 
 lando composer require "drush/drush"
 
