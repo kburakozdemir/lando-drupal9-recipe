@@ -45,6 +45,32 @@ lando drush site-install \
   --yes
 ```
 
+If you want to perform a standard Drupal installation with a different language, change the `locale` option (in this example `tr` (Turkish) is used):
+
+```bash
+# Ref: https://drushcommands.com/drush-9x/site/site:install/
+# drush si --db-url=mysql://root:pass@localhost:port/dbname
+lando drush site-install \
+  standard \
+  --locale=tr \
+  --db-url=mysql://drupal9:drupal9@database:3306/drupal9 \
+  --account-name=admin \
+  --account-pass=admin \
+  --yes
+```This will perform a standard Drupal installation:
+
+```bash
+# Ref: https://drushcommands.com/drush-9x/site/site:install/
+# drush si --db-url=mysql://root:pass@localhost:port/dbname
+lando drush site-install \
+  standard \
+  --locale=en \
+  --db-url=mysql://drupal9:drupal9@database:3306/drupal9 \
+  --account-name=admin \
+  --account-pass=admin \
+  --yes
+```
+
 ## Environment Information
 
 The operating system and other software used are as follows:
