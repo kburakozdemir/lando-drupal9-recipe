@@ -31,6 +31,8 @@ lando drush --version
 
 ## Install Site
 
+This will perform a standard Drupal installation:
+
 ```bash
 # Ref: https://drushcommands.com/drush-9x/site/site:install/
 # drush si --db-url=mysql://root:pass@localhost:port/dbname
