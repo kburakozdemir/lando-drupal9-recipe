@@ -105,7 +105,9 @@ lando drush site-install \
 
 ## Admin Interface
 
-If 'Automated Installation via drush' is used for installation, visit `https://dev-drupal9.lndo.site/user/login` and use `admin` for both username and password.
+Visit `https://dev-drupal9.lndo.site/user/login`.
+
+If 'Automated Installation via drush' is used for installation, use `admin` for both username and password.
 
 ## Environment Information
 
