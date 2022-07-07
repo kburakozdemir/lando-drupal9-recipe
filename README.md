@@ -32,6 +32,8 @@ rm ./drupal/web/.gitkeep
 lando composer install # do not forget to confirm plugins when prompted
 ```
 
+Note: This is resolved. Please see [Composer v2.2 prompts to authorize plugins](https://www.drupal.org/project/drupal/issues/3255749) and [Composer 2.2+ Authorized Plugins](https://www.drupal.org/node/3294646).
+
 ![Allow plugins](https://i.imgur.com/AKjMevW.png)
 
 Install drush
