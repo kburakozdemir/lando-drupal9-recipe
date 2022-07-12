@@ -118,16 +118,16 @@ The operating system and other software used are as follows:
 ```txt
 lsb_release -a
 No LSB modules are available.
-Distributor ID: Ubuntu
-Description:    Ubuntu 18.04.6 LTS
-Release:        18.04
-Codename:       bionic
+Distributor ID:	Ubuntu
+Description:	Ubuntu 20.04.4 LTS
+Release:	20.04
+Codename:	focal
 
 lando version
-v3.4.2
+v3.6.4
 
 docker --version
-Docker version 20.10.11, build dea9396
+Docker version 20.10.17, build 100c701
 
 docker-compose --version
 docker-compose version 1.29.1, build c34c88b2
